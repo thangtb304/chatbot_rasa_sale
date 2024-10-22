@@ -1,0 +1,44 @@
+{
+  "conversation": [
+    {
+      "role": "customer",
+      "text": "Xin chào, tôi đang tìm kiếm một chiếc đồng hồ thông minh. Bạn có thể giúp tôi không?"
+    },
+    {
+      "role": "employee_fb_06",
+      "text": "Chào bạn! Tất nhiên, tôi rất vui được giúp đỡ. Hiện tại, chúng tôi có mẫu đồng hồ thông minh Samsung Galaxy Watch 4, một trong những sản phẩm nổi bật nhất trên thị trường."
+    },
+    {
+      "role": "customer",
+      "text": "Mẫu đó có gì đặc biệt không?"
+    },
+    {
+      "role": "employee_fb_06",
+      "text": "Đúng vậy! Galaxy Watch 4 được trang bị tính năng theo dõi sức khỏe tiên tiến, bao gồm đo nhịp tim, theo dõi giấc ngủ và kiểm tra mức oxy trong máu. Nó còn hỗ trợ nhiều chế độ thể thao khác nhau, từ chạy bộ đến bơi lội."
+    },
+    {
+      "role": "customer",
+      "text": "Nghe có vẻ hay! Còn về giá cả thì sao?"
+    },
+    {
+      "role": "employee_fb_06",
+      "text": "Giá của Galaxy Watch 4 hiện là 5.500.000 VNĐ. Chúng tôi đang có chương trình khuyến mãi, giảm giá 15% cho đơn hàng đầu tiên!"
+    },
+    {
+      "role": "customer",
+      "text": "Vậy còn bảo hành thì sao?"
+    },
+    {
+      "role": "employee_fb_06",
+      "text": "Sản phẩm đi kèm với chế độ bảo hành 12 tháng, và bạn cũng có thể mua thêm gói bảo hiểm mở rộng nếu muốn bảo vệ tốt hơn cho đồng hồ."
+    },
+    {
+      "role": "customer",
+      "text": "Cảm ơn bạn đã cung cấp thông tin chi tiết. Tôi sẽ suy nghĩ thêm!"
+    },
+    {
+      "role": "employee_fb_06",
+      "text": "Không có gì! Nếu bạn có thêm câu hỏi nào, đừng ngần ngại liên hệ với chúng tôi. Chúc bạn tìm được sản phẩm ưng ý!"
+    }
+  ]
+}

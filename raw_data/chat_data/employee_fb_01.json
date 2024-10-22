@@ -1,0 +1,92 @@
+{
+  "conversation": [
+    {
+      "role": "customer",
+      "text": "Xin chào"
+    },
+    {
+      "role": "employee_fb_01",
+      "text": "Tôi có thể giúp gì bạn?"
+    },
+    {
+      "role": "customer",
+      "text": "Tôi muốn tìm hiểu về đồng hồ thông minh."
+    },
+    {
+      "role": "employee_fb_01",
+      "text": "Chúng tôi đang có sản phẩm đồng hồ thông minh XYZ đang hot, nó rất phù hợp với bạn đó."
+    },
+    {
+      "role": "customer",
+      "text": "Sản phẩm này có giá bao nhiêu?"
+    },
+    {
+      "role": "employee_fb_01",
+      "text": "Giá của sản phẩm đồng hồ thông minh XYZ là 2.500.000 VNĐ."
+    },
+    {
+      "role": "customer",
+      "text": "Chiếc này có tính năng theo dõi sức khỏe không?"
+    },
+    {
+      "role": "employee_fb_01",
+      "text": "Các tính năng chính của đồng hồ thông minh XYZ là: theo dõi nhịp tim, theo dõi giấc ngủ và theo dõi hoạt động thể chất."
+    },
+    {
+      "role": "customer",
+      "text": "Shop có ưu đãi gì cho sản phẩm này không?"
+    },
+    {
+      "role": "employee_fb_01",
+      "text": "Các chương trình khuyến mãi hiện có cho đồng hồ thông minh XYZ là: giảm giá 10% cho đơn hàng đầu tiên."
+    },
+    {
+      "role": "customer",
+      "text": "Bảo hành của đồng hồ là bao lâu?"
+    },
+    {
+      "role": "employee_fb_01",
+      "text": "Đồng hồ thông minh XYZ đi kèm với thời gian bảo hành 12 tháng."
+    },
+    {
+      "role": "customer",
+      "text": "Bạn có thể chỉ cách dùng sản phẩm này không?"
+    },
+    {
+      "role": "employee_fb_01",
+      "text": "Hướng dẫn sử dụng cho đồng hồ thông minh XYZ là: tải ứng dụng trên điện thoại, kết nối Bluetooth và làm theo hướng dẫn trong app."
+    },
+    {
+      "role": "customer",
+      "text": "Phí vận chuyển sản phẩm này là bao nhiêu?"
+    },
+    {
+      "role": "employee_fb_01",
+      "text": "Chi phí vận chuyển là 30.000 VNĐ."
+    },
+    {
+      "role": "customer",
+      "text": "Mình đặt hàng hôm nay, khi nào có thể nhận được?"
+    },
+    {
+      "role": "employee_fb_01",
+      "text": "Thời gian giao hàng dự kiến là 3 ngày làm việc."
+    },
+    {
+      "role": "customer",
+      "text": "Bạn có COD không?"
+    },
+    {
+      "role": "employee_fb_01",
+      "text": "Các phương thức thanh toán có sẵn là: COD và chuyển khoản ngân hàng."
+    },
+    {
+      "role": "customer",
+      "text": "Tôi muốn đặt hàng."
+    },
+    {
+      "role": "employee_fb_01",
+      "text": "Cảm ơn bạn đã yêu cầu đặt hàng. Vui lòng hoàn thành form."
+    }
+  ]
+}

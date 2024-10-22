@@ -1,0 +1,32 @@
+{
+  "conversation": [
+    {
+      "role": "customer",
+      "text": "Chào bạn, tôi muốn tìm hiểu về đồng hồ thông minh."
+    },
+    {
+      "role": "employee_fb_05",
+      "text": "Xin chào! Bạn có muốn biết về mẫu Fitbit Versa 3 không? Nó rất phổ biến với tính năng theo dõi sức khỏe."
+    },
+    {
+      "role": "customer",
+      "text": "Đúng rồi, nó có những tính năng gì?"
+    },
+    {
+      "role": "employee_fb_05",
+      "text": "Đồng hồ này theo dõi nhịp tim, lượng calo tiêu thụ và có chế độ tập luyện cho nhiều môn thể thao khác nhau."
+    },
+    {
+      "role": "customer",
+      "text": "Giá của sản phẩm này là bao nhiêu?"
+    },
+    {
+      "role": "employee_fb_05",
+      "text": "Giá của Fitbit Versa 3 là 4.000.000 VNĐ. Hiện tại, chúng tôi đang có chương trình giảm giá 10%!"
+    },
+    {
+      "role": "customer",
+      "text": "Cho tôi đặt mua nhé"
+    }
+  ]
+}

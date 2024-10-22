@@ -1,0 +1,124 @@
+[
+    {
+        "id_order": 1,
+        "employee_id": "FB123456",
+        "time_order": "2024-10-01",
+        "ship": 30000,
+        "products": [
+            {
+                "id_product": 1,
+                "name_product": "Smartwatch ABC",
+                "price": 100000,
+                "features": "Chống nước, theo dõi nhịp tim, GPS",
+                "usage_instructions": "Sạc đầy trước khi sử dụng lần đầu, tránh để nơi có nhiệt độ cực đoan",
+                "promotions": "Giảm giá 15% cho đơn hàng đầu tiên",
+                "warranty": "Bảo hành 1 năm, hỗ trợ khách hàng 24/7"
+            },
+            {
+                "id_product": 2,
+                "name_product": "Fitness Tracker XYZ",
+                "price": 200000,
+                "features": "Theo dõi hoạt động, đo giấc ngủ, thông báo tin nhắn",
+                "usage_instructions": "Kết nối với ứng dụng để sử dụng, đồng bộ hóa dữ liệu hàng ngày",
+                "promotions": "Mua 2 giảm 10%",
+                "warranty": "Bảo hành 6 tháng"
+            }
+        ],
+        "quantities": [1, 2],
+        "total_amount": 500000
+    },
+    {
+        "id_order": 2,
+        "employee_id": "FB654321",
+        "time_order": "2024-10-02",
+        "ship": 30000,
+        "products": [
+            {
+                "id_product": 3,
+                "name_product": "Smartwatch DEF",
+                "price": 300000,
+                "features": "Màn hình cảm ứng, tính năng gọi điện, theo dõi sức khỏe",
+                "usage_instructions": "Thao tác trên màn hình, xem hướng dẫn trong ứng dụng",
+                "promotions": "Giảm giá 20% cho sinh viên",
+                "warranty": "Bảo hành 2 năm"
+            }
+        ],
+        "quantities": [1],
+        "total_amount": 330000
+    },
+    {
+        "id_order": 3,
+        "employee_id": "FB123456",
+        "time_order": "2024-10-03",
+        "ship": 30000,
+        "products": [
+            {
+                "id_product": 1,
+                "name_product": "Smartwatch ABC",
+                "price": 100000
+            },
+            {
+                "id_product": 2,
+                "name_product": "Fitness Tracker XYZ",
+                "price": 200000
+            },
+            {
+                "id_product": 3,
+                "name_product": "Smartwatch DEF",
+                "price": 300000
+            }
+        ],
+        "quantities": [1, 1, 1],
+        "total_amount": 660000
+    },
+    {
+        "id_order": 4,
+        "employee_id": "FB654321",
+        "time_order": "2024-10-04",
+        "ship": 30000,
+        "products": [
+            {
+                "id_product": 2,
+                "name_product": "Fitness Tracker XYZ",
+                "price": 200000
+            }
+        ],
+        "quantities": [3],
+        "total_amount": 630000
+    },
+    {
+        "id_order": 5,
+        "employee_id": "FB987654",
+        "time_order": "2024-10-05",
+        "ship": 30000,
+        "products": [
+            {
+                "id_product": 1,
+                "name_product": "Smartwatch ABC",
+                "price": 100000
+            },
+            {
+                "id_product": 3,
+                "name_product": "Smartwatch DEF",
+                "price": 300000
+            }
+        ],
+        "quantities": [2, 1],
+        "total_amount": 530000
+    },
+    {
+        "id_order": 6,
+        "employee_id": "FB987654",
+        "time_order": "2024-10-06",
+        "ship": 30000,
+        "products": [
+            {
+                "id_product": 1,
+                "name_product": "Smartwatch ABC",
+                "price": 100000
+            }
+        ],
+        "quantities": [1],
+        "total_amount": 130000
+    }
+]

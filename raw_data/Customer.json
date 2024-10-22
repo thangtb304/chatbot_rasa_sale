@@ -1,0 +1,20 @@
+[
+    {
+        "id_customer": 1,
+        "name": "Nguyễn Văn A",
+        "phone": "0901234567",
+        "address": "123 Đường ABC, Quận 1, TP. Hồ Chí Minh"
+    },
+    {
+        "id_customer": 2,
+        "name": "Trần Thị B",
+        "phone": "0912345678",
+        "address": "456 Đường DEF, Quận 2, TP. Hồ Chí Minh"
+    },
+    {
+        "id_customer": 3,
+        "name": "Lê Văn C",
+        "phone": "0923456789",
+        "address": "789 Đường GHI, Quận 3, TP. Hồ Chí Minh"
+    }
+]

@@ -1,0 +1,53 @@
+{
+    "conversation": [
+      {
+        "role": "customer",
+        "text": "Chào bạn, tôi đang tìm hiểu về đồng hồ thông minh."
+      },
+      {
+        "role": "employee_fb_04",
+        "text": "Xin chào! Bạn có quan tâm đến mẫu Galaxy Watch 4 không? Đây là một trong những sản phẩm tốt nhất hiện nay."
+      },
+      {
+        "role": "customer",
+        "text": "Vâng, tôi đã nghe nói về nó. Nó có tính năng gì nổi bật không?"
+      },
+      {
+        "role": "employee_fb_04",
+        "text": "Đồng hồ này có nhiều tính năng thú vị, như theo dõi sức khỏe, đo nhịp tim liên tục và kiểm tra mức độ stress."
+      },
+      {
+        "role": "customer",
+        "text": "Tôi muốn biết thêm về khả năng theo dõi giấc ngủ."
+      },
+      {
+        "role": "employee_fb_04",
+        "text": "Galaxy Watch 4 cung cấp thông tin chi tiết về giấc ngủ của bạn, bao gồm thời gian ngủ sâu, thời gian ngủ nhẹ và cả thời gian thức dậy."
+      },
+      {
+        "role": "customer",
+        "text": "Nghe có vẻ tuyệt. Nó có kết nối với điện thoại không?"
+      },
+      {
+        "role": "employee_fb_04",
+        "text": "Có, đồng hồ có thể kết nối với cả Android và iOS qua Bluetooth, giúp bạn nhận thông báo và tin nhắn ngay trên cổ tay."
+      },
+      {
+        "role": "customer",
+        "text": "Vậy giá của sản phẩm này là bao nhiêu?"
+      },
+      {
+        "role": "employee_fb_04",
+        "text": "Giá của Galaxy Watch 4 là 5.500.000 VNĐ. Hiện tại, chúng tôi cũng có chương trình khuyến mãi giảm 15% cho đơn hàng đầu tiên."
+      },
+      {
+        "role": "customer",
+        "text": "Tôi rất thích! Làm thế nào để tôi có thể đặt hàng?"
+      },
+      {
+        "role": "employee_fb_04",
+        "text": "Bạn chỉ cần cung cấp cho tôi thông tin như tên, địa chỉ giao hàng và số điện thoại, tôi sẽ giúp bạn hoàn tất đơn hàng."
+      }
+    ]
+  }
+  

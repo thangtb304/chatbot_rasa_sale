@@ -1,0 +1,29 @@
+[
+    {
+        "id_product": 1,
+        "name_product": "Đồng hồ thông minh Smartwatch ABC",
+        "price": 100000,
+        "features": "Chống nước, theo dõi nhịp tim, GPS",
+        "usage_instructions": "Sạc đầy trước khi sử dụng lần đầu, tránh để nơi có nhiệt độ cực đoan",
+        "promotions": "Giảm giá 15% cho đơn hàng đầu tiên",
+        "warranty": "Bảo hành 1 năm, hỗ trợ khách hàng 24/7"
+    },
+    {
+        "id_product": 2,
+        "name_product": "Đồng hồ thông minh ABC",
+        "price": 200000,
+        "features": "Theo dõi hoạt động, đo giấc ngủ, thông báo tin nhắn",
+        "usage_instructions": "Kết nối với ứng dụng để sử dụng, đồng bộ hóa dữ liệu hàng ngày",
+        "promotions": "Mua 2 giảm 10%",
+        "warranty": "Bảo hành 6 tháng"
+    },
+    {
+        "id_product": 3,
+        "name_product": "Đồng hồ thông minh Smartwatch DEF",
+        "price": 300000,
+        "features": "Màn hình cảm ứng, tính năng gọi điện, theo dõi sức khỏe",
+        "usage_instructions": "Thao tác trên màn hình, xem hướng dẫn trong ứng dụng",
+        "promotions": "Giảm giá 20% cho sinh viên",
+        "warranty": "Bảo hành 2 năm"
+    }
+]

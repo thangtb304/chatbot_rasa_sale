@@ -1,0 +1,191 @@
+version: "3.1"
+
+nlu:
+
+## greeting
+  - intent: greet
+    examples: |
+      - Xin chào
+      - Chào shop
+      - Hi
+      - Hello
+      - Chào bạn, mình muốn hỏi chút
+      - Xin chào, tôi muốn tư vấn
+      - Chào anh/chị
+      - Chào bạn, tôi cần hỗ trợ
+      - Hello shop
+      - Hi bạn, có thể tư vấn giúp tôi không?
+
+  - intent: ask_product_info
+    examples: |
+      - Bạn có đồng hồ thông minh nào không?
+      - Bên bạn có bán đồng hồ thông minh không
+      - Bạn có bán Smart watch không?
+      - Shop có bán Smartwatch không?
+
+  - intent: ask_product_name  #t##
+    examples: |
+      - Bạn có [Đồng hồ thông minh ABC](product_name) không?
+      - Shop có [đồng hồ thông minh B](product_name) không?
+      - Shop có [đồng hồ thông minh B](product_name) không?
+      - Bạn còn sản phẩm [Đồng hồ thông minh XYZ](product_name)
+      - Mẫu [Đồng hồ thông minh C](product_name) shop có không
+      - Sản phẩm [đồng hồ thông minh A](product_name) shop có không?
+
+## detail product        ####
+  - intent: ask_product_price
+    examples: |
+      - Giá của cái này là bao nhiêu?
+      - Chiếc này giá bao nhiêu tiền?
+      - Bạn cho mình xin giá với?
+      - Giá bao nhiêu vậy?
+      - Giá tiền của sản phẩm này là bao nhiêu?
+      - Mẫu này có giá bao nhiêu?
+      - Bạn báo giá sản phẩm giúp mình nhé
+
+  - intent: ask_product_features
+    examples: |
+      - Đồng hồ này có tính năng gì nổi bật?
+      - Chiếc này có ưu điểm?
+      - Mình muốn biết thêm về chức năng
+      - Đồng hồ này có chức năng gì tốt?
+      - Gửi cho mình thông tin chức năng?
+      - Những tính năng chính của sản phẩm là gì?
+      - Hãy cho tôi biết các chức năng chính của sản phẩm.
+
+  - intent: ask_product_promotions
+    examples: |
+      - Có chương trình khuyến mãi nào không?
+      - Hiện tại có giảm giá nào không?
+      - Shop có ưu đãi gì cho sản phẩm này không?
+      - Sản phẩm này có khuyến mãi gì không?
+      - Có chương trình giảm giá nào cho sản phẩm này không?
+      - Có ưu đãi giảm giá gì hiện tại không?
+      - Có chương trình ưu đãi gì khi mua hàng không
+
+  - intent: ask_product_warranty
+    examples: |
+      - Bảo hành của đồng hồ là bao lâu?
+      - Đồng hồ nàybảo hành như thế nào?
+      - Shop có bảo hành không?
+      - Chiếc này được bảo hành mấy tháng?
+      - Chính sách bảo hành của shop là gì?
+      - Thời gian bảo hành của sản phẩm này là bao lâu?
+      - Bạn có thể cho tôi biết về dịch vụ hậu mãi không?
+
+  - intent: ask_product_usage_instructions
+    examples: |
+      - Tôi nên sử dụng sản phẩm như thế nào?
+      - Có hướng dẫn sử dụng nào không?
+      - Bạn có thể chỉ cách dùng sản phẩm này không?
+      - Làm thế nào để sử dụng sản phẩm này đúng cách?
+      - Tôi cần biết cách dùng sản phẩm này.
+      - Sử dụng sản phẩm có phức tạp không?
+
+## ask order
+  - intent: ask_shipping_fee  ######
+    examples: |
+      - Phí ship là bao nhiêu?
+      - Phí Giao hàng là bao nhiêu?
+      - Ship hàng hết bao nhiêu tiền?
+      - Phí vận chuyển sản phẩm này là bao nhiêu?
+      - Shop tính phí ship thế nào?
+      - Chi phí ship thế nào?
+      - Chi phí vận chuyển hết bao nhiêu?
+      - Phí vận chuyển hết bao nhiêu?
+      - Phí giao hàng hết bao nhiêu?
+
+  - intent: ask_delivery_time   #####
+    examples: |
+      - Thời gian giao hàng mất bao lâu?
+      - Giao hàng trong bao lâu?
+      - Thời gian giao hàng là bao lâu?
+      - Bao lâu thì mình nhận được hàng?
+      - Bao lâu hàng sẽ đến nơi?
+
+  - intent: ask_payment_method   #######
+    examples: |
+      - Có thể thanh toán bằng cách nào?
+      - Hình thức thanh toán như thế nào?
+      - Bên bạn có hình thức thanh toán nào?
+      - Tôi có thể thanh toán như thế nào?
+      - Phương thức thanh toán của shop là gì?
+
+## customer info
+  - intent: provide_customer_name
+    examples: |
+      - Tên tôi là [Nguyễn Văn A](customer_name)
+      - Tôi tên là [Trần Thị B](customer_name)
+      - [Lê Văn C](customer_name) là tên tôi
+      - Tôi là [Nguyễn Văn D](customer_name)
+      - Họ tên của tôi là [Phạm Thị E](customer_name)
+
+  - intent: provide_customer_address
+    examples: |
+      - Địa chỉ của tôi là [123 Đường ABC](customer_address)
+      - Tôi sống ở [456 Đường DEF, Quận GHI](customer_address)
+      - Địa chỉ nhà tôi là [789 Đường JKL, Thành phố MNO](customer_address)
+      - Tôi ở [123 Phố PQR](customer_address)
+      - Nhà tôi tại [555 Đường XYZ, Khu ZYX](customer_address)
+
+  - intent: provide_customer_phone
+    examples: |
+      - Số điện thoại của tôi là [0123456789](customer_phone)
+      - Tôi có thể được liên hệ qua số [0987654321](customer_phone)
+      - Bạn có thể gọi tôi qua số [0123456789](customer_phone)
+      - Số liên lạc của tôi là [0901234567](customer_phone)
+      - Gọi cho tôi qua số [0945678901](customer_phone)
+
+  - intent: provide_product_name
+    examples: |
+      - Tôi muốn đặt mua [Đồng hồ thông minh ABC](product_name)
+      - Sản phẩm là [Điện thoại XYZ](product_name)
+      - Tôi cần [Máy tính bảng DEF](product_name)
+      - Sản phẩm tôi muốn mua là [Laptop GHI](product_name)
+      - Tôi cần đặt [Tai nghe Bluetooth JKL](product_name)
+      
+  - intent: provide_product_quantity
+    examples: |
+      - Tôi muốn mua [2](product_quantity) cái
+      - Tôi cần [1](product_quantity) chiếc
+      - Đặt giúp tôi [3](product_quantity) sản phẩm
+      - Tôi muốn mua số lượng là [4](product_quantity)
+      - Tôi cần mua [5](product_quantity) đơn vị
+
+## confirm order
+  - intent: request_order
+    examples: |
+      - Lên đơn cho sản phẩm này
+      - Tôi đặt mua nhé, lên đơn giúp tôi
+      - Tôi mua mẫu này nhé, lên đơn giúp tôi
+      - Tôi muốn đặt hàng sản phẩm này
+      - Mình muốn mua cái này, lên đơn giúp mình
+      - Lên đơn giúp mình nhé 
+      - Lên cho mình đơn này 
+
+## goodbye
+  - intent: goodbye
+    examples: |
+      - Cảm ơn, tạm biệt
+      - Cảm ơn bạn nhiều nhé
+      - Mình sẽ suy nghĩ thêm, cảm ơn
+      - Tạm biệt shop
+      - Cảm ơn bạn, hẹn gặp lại
+      - Ok, mình cảm ơn 
+
+## inquiry support
+  - intent: inquire_help
+    examples: |
+      - Tôi cần hỗ trợ
+      - Bạn có thể giúp tôi không?
+      - Tôi đang gặp vấn đề
+      - Tôi cần trợ giúp về đơn hàng đã đặt
+      - Làm ơn hãy giúp tôi về đơn hàng
+
+  - intent: inquire_order_status
+    examples: |
+      - Đơn hàng của tôi hiện tại đang ở đâu?
+      - Mình muốn kiểm tra trạng thái đơn hàng
+      - Đơn hàng đã được gửi chưa?
+      - Tôi có thể biết tình trạng đơn hàng không?
+      - Khi nào thì đơn hàng của tôi sẽ đến?

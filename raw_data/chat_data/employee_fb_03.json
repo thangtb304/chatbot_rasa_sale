@@ -1,0 +1,44 @@
+{
+  "conversation": [
+    {
+      "role": "customer",
+      "text": "Chào bạn, tôi muốn biết về đồng hồ thông minh."
+    },
+    {
+      "role": "employee_fb_03",
+      "text": "Xin chào! Bạn đang nói về đồng hồ Galaxy Watch 4 phải không?"
+    },
+    {
+      "role": "customer",
+      "text": "Đúng rồi, sản phẩm này có tính năng gì nổi bật?"
+    },
+    {
+      "role": "employee_fb_03",
+      "text": "Đồng hồ này có tính năng theo dõi sức khỏe, đo nhịp tim và theo dõi giấc ngủ."
+    },
+    {
+      "role": "customer",
+      "text": "Giá của nó là bao nhiêu?"
+    },
+    {
+      "role": "employee_fb_03",
+      "text": "Giá của Galaxy Watch 4 là 5.500.000 VNĐ."
+    },
+    {
+      "role": "customer",
+      "text": "Có chương trình khuyến mãi nào không?"
+    },
+    {
+      "role": "employee_fb_03",
+      "text": "Chúng tôi đang có giảm giá 15% cho khách hàng mới."
+    },
+    {
+      "role": "customer",
+      "text": "Tôi muốn đặt hàng."
+    },
+    {
+      "role": "employee_fb_03",
+      "text": "Cảm ơn bạn! Vui lòng cung cấp thông tin để đặt hàng."
+    }
+  ]
+}

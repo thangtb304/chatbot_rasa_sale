@@ -1,0 +1,36 @@
+language: "vi"
+
+pipeline:
+  - name: WhitespaceTokenizer          # Bộ tách từ, phù hợp với tiếng Việt
+  - name: RegexFeaturizer              # Xử lý các pattern đặc biệt
+  - name: LexicalSyntacticFeaturizer   # Featurizer dựa trên từ vựng
+  - name: CountVectorsFeaturizer       # Featurizer dựa trên từ
+  - name: CountVectorsFeaturizer
+    analyzer: "char_wb"
+    min_ngram: 1
+    max_ngram: 4
+  - name: DIETClassifier           # Bộ phân loại intent và nhận diện entity
+    epochs: 200                    # Tăng số epochs 100 sẽ ok hơn
+  - name: EntitySynonymMapper      # Đồng bộ hóa các thực thể (entity synonym)
+  - name: ResponseSelector         # Bộ chọn câu trả lời
+    epochs: 200                    # Tăng số epochs 100 sẽ ok hơn
+  - name: FallbackClassifier       # Bộ phân loại fallback (trường hợp không chắc chắn)
+    threshold: 0.3                 # Ngưỡng cho fallback
+    ambiguity_threshold: 0.1
+
+policies:
+  - name: MemoizationPolicy        # Chính sách ghi nhớ lịch sử tương tác
+    max_history: 5                 # Số bước lịch sử mà mô hình sẽ nhớ
+  - name: RulePolicy               # Chính sách xử lý quy tắc
+    core_fallback_threshold: 0.4   # Ngưỡng fallback khi không biết phản hồi
+    enable_fallback_prediction: True
+  - name: UnexpecTEDIntentPolicy   # Chính sách dự đoán intent không mong đợi
+    max_history: 5
+    epochs: 200
+  - name: TEDPolicy                # Chính sách TED giúp mô hình học lịch sử tương tác
+    max_history: 5
+    epochs: 200
+    constrain_similarities: true   # Hạn chế các intent có sự tương tự cao
+
+logging:
+  level: DEBUG

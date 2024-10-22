@@ -1,0 +1,20 @@
+[
+    {
+        "id_consultant": 1,
+        "name": "Nguyễn Văn D",
+        "employee_id": "FB123456",
+        "level_consultant": "Senior"
+    },
+    {
+        "id_consultant": 2,
+        "name": "Trần Thị E",
+        "employee_id": "FB654321",
+        "level_consultant": "Junior"
+    },
+    {
+        "id_consultant": 3,
+        "name": "Lê Văn F",
+        "employee_id": "FB987654",
+        "level_consultant": "Mid-level"
+    }
+]

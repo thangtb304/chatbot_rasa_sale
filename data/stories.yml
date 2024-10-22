@@ -1,0 +1,110 @@
+version: "3.1"
+
+stories: 
+  ## greeting
+  - story: greet and inquire product
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_product_info
+      - action: utter_ask_name_product
+      - intent: ask_product_name
+        entities:
+          - product_name: "Đồng hồ thông minh ABC"
+      - slot_was_set:
+          - product_name: "Đồng hồ thông minh ABC"
+      - action: action_store_product_name
+      - action: utter_ask_more_info
+
+  ## detail
+  - story: get detail product
+    steps:   
+      #
+      - intent: ask_product_features
+      - action: action_provide_product_features
+      - action: utter_provide_product_features  # Hiển thị tính năng sản phẩm
+
+      ###### detail
+      - intent: ask_product_price
+      - action: action_provide_product_price
+      - action: utter_provide_product_price  # Hiển thị giá sản phẩm
+      #
+      - intent: ask_product_promotions
+      # - action: action_provide_product_promotions
+      - action: utter_provide_product_promotions  # Hiển thị chương trình khuyến mãi
+      # #
+      - intent: ask_product_warranty
+      # - action: action_provide_product_warranty
+      - action: utter_provide_product_warranty  # Hiển thị thông tin bảo hành
+      # #
+      - intent: ask_product_usage_instructions
+      # - action: action_provide_product_usage_instructions
+      - action: utter_provide_product_usage_instructions  # Hiển thị hướng dẫn sử dụng
+  
+  ###### Ask order
+  - story: delivery 
+    steps:
+      
+      - intent: ask_shipping_fee
+      # - action: action_provide_shipping_fee
+      - action: utter_provide_shipping_fee  # hiển thị phí ship
+
+      - intent: ask_delivery_time
+      # - action: action_provide_delivery_time
+      - action: utter_provide_delivery_time  # hiển thị thời gian giao hàng
+
+      - intent: ask_payment_method
+      # - action: action_provide_payment_method
+      - action: utter_provide_payment_method  # hiển thị phương thức thanh toán
+
+  ## confirm order
+
+  - story: order form flow 
+    steps:
+      - intent: request_order
+      - action: utter_ask_fill_form
+
+      - action: utter_ask_customer_name
+      - intent: provide_customer_name  # Người dùng cung cấp tên
+      - slot_was_set:
+          - customer_name: "Nguyễn Văn A"  # Có thể để trống nếu cần nhập từ người dùng
+
+      - action: utter_ask_customer_address
+      - intent: provide_customer_address  # Người dùng cung cấp địa chỉ
+      - slot_was_set:
+          - customer_address: "123 Đường ABC"  # Có thể để trống
+
+      - action: utter_ask_customer_phone
+      - intent: provide_customer_phone  # Người dùng cung cấp số điện thoại
+      - slot_was_set:
+          - customer_phone: "0123456789"  # Có thể để trống
+
+      - action: utter_ask_product_name
+      - intent: provide_product_name  # Người dùng cung cấp tên sản phẩm
+      - slot_was_set:
+          - product_name: "Đồng hồ thông minh ABC"  # Có thể để trống
+
+      - action: utter_ask_product_quantity
+      - intent: provide_product_quantity  # Người dùng cung cấp số lượng
+      - slot_was_set:
+          - product_quantity: "2"  # Có thể để trống
+
+      - action: validate_order_form  # Xác thực form và lưu slot
+      - action: action_submit_order  # Xử lý thông tin đơn hàng và hiển thị
+
+      - action: utter_confirm_order  # Xác nhận đơn hàng
+      - action: utter_thank_you  # Gửi phản hồi cảm ơn
+
+  ## goodbye
+  - story: goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  ## inquiry support
+  - story: Ask for support
+    steps:
+      - intent: inquire_help
+      - action: utter_handle_help
+      - intent: inquire_order_status
+      - action: utter_handle_help

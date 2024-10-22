@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-customer_address",
+      "2": "I-customer_address",
+      "3": "L-customer_address",
+      "4": "U-customer_address",
+      "5": "B-customer_name",
+      "6": "I-customer_name",
+      "7": "L-customer_name",
+      "8": "U-customer_name",
+      "9": "B-customer_phone",
+      "10": "I-customer_phone",
+      "11": "L-customer_phone",
+      "12": "U-customer_phone",
+      "13": "B-product_name",
+      "14": "I-product_name",
+      "15": "L-product_name",
+      "16": "U-product_name",
+      "17": "B-product_quantity",
+      "18": "I-product_quantity",
+      "19": "L-product_quantity",
+      "20": "U-product_quantity",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-customer_address": 1,
+      "I-customer_address": 2,
+      "L-customer_address": 3,
+      "U-customer_address": 4,
+      "B-customer_name": 5,
+      "I-customer_name": 6,
+      "L-customer_name": 7,
+      "U-customer_name": 8,
+      "B-customer_phone": 9,
+      "I-customer_phone": 10,
+      "L-customer_phone": 11,
+      "U-customer_phone": 12,
+      "B-product_name": 13,
+      "I-product_name": 14,
+      "L-product_name": 15,
+      "U-product_name": 16,
+      "B-product_quantity": 17,
+      "I-product_quantity": 18,
+      "L-product_quantity": 19,
+      "U-product_quantity": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

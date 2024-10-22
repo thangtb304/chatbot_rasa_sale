@@ -1,0 +1,92 @@
+{
+  "conversation": [
+    {
+      "role": "customer",
+      "text": "Chào bạn, tôi cần tư vấn về sản phẩm."
+    },
+    {
+      "role": "employee_fb_02",
+      "text": "Xin chào! Tôi có thể giúp gì cho bạn hôm nay?"
+    },
+    {
+      "role": "customer",
+      "text": "Tôi muốn biết thêm về đồng hồ thông minh."
+    },
+    {
+      "role": "employee_fb_02",
+      "text": "Chúng tôi đang có sản phẩm đồng hồ thông minh Galaxy Watch 4, rất được yêu thích hiện nay."
+    },
+    {
+      "role": "customer",
+      "text": "Sản phẩm này có tính năng gì nổi bật không?"
+    },
+    {
+      "role": "employee_fb_02",
+      "text": "Đồng hồ Galaxy Watch 4 có các tính năng theo dõi sức khỏe như đo nhịp tim, theo dõi giấc ngủ và phân tích mức độ stress."
+    },
+    {
+      "role": "customer",
+      "text": "Giá của nó là bao nhiêu?"
+    },
+    {
+      "role": "employee_fb_02",
+      "text": "Giá của đồng hồ Galaxy Watch 4 là 5.500.000 VNĐ."
+    },
+    {
+      "role": "customer",
+      "text": "Có chương trình khuyến mãi nào không?"
+    },
+    {
+      "role": "employee_fb_02",
+      "text": "Hiện tại chúng tôi đang có chương trình giảm giá 15% cho khách hàng mua lần đầu."
+    },
+    {
+      "role": "customer",
+      "text": "Thời gian bảo hành là bao lâu?"
+    },
+    {
+      "role": "employee_fb_02",
+      "text": "Sản phẩm đi kèm với thời gian bảo hành 24 tháng."
+    },
+    {
+      "role": "customer",
+      "text": "Hướng dẫn sử dụng sản phẩm này có khó không?"
+    },
+    {
+      "role": "employee_fb_02",
+      "text": "Hướng dẫn sử dụng rất đơn giản. Bạn chỉ cần tải ứng dụng Galaxy Wearable, kết nối đồng hồ và làm theo các bước hướng dẫn trên màn hình."
+    },
+    {
+      "role": "customer",
+      "text": "Phí vận chuyển là bao nhiêu?"
+    },
+    {
+      "role": "employee_fb_02",
+      "text": "Chi phí vận chuyển cho sản phẩm này là 20.000 VNĐ."
+    },
+    {
+      "role": "customer",
+      "text": "Khi nào tôi có thể nhận hàng nếu đặt hôm nay?"
+    },
+    {
+      "role": "employee_fb_02",
+      "text": "Thời gian giao hàng dự kiến sẽ là 2 đến 4 ngày làm việc."
+    },
+    {
+      "role": "customer",
+      "text": "Có thể thanh toán khi nhận hàng không?"
+    },
+    {
+      "role": "employee_fb_02",
+      "text": "Có, chúng tôi hỗ trợ thanh toán COD cho đơn hàng."
+    },
+    {
+      "role": "customer",
+      "text": "Tôi muốn đặt hàng."
+    },
+    {
+      "role": "employee_fb_02",
+      "text": "Cảm ơn bạn đã đặt hàng. Vui lòng cung cấp thông tin để hoàn tất đơn hàng."
+    }
+  ]
+}
