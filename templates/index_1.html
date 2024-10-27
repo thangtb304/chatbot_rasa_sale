@@ -1,0 +1,63 @@
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    CHATBOT DEMO <br>
+    <textarea name="chatcontent" id="chat_content" style="width: 300px; height: 150px;"></textarea>
+    <br>
+    <input type="text" id="user_message">
+    <br>
+    <button id="btn_send">Send</button>
+    <br><br>
+
+<script>
+    function addToTextArea ($ta, text){
+        var val = $ta.val();
+        if(val){
+            $ta.val(val + '\n' + text);
+        } else {
+            $ta.val(text);
+        }
+        $ta.scrollTop($ta[0].scrollHeight);
+    }
+
+    // Khi người dùng gõ enter vào ô message thì gọi lệnh sendchat
+    $('#user_message').keypress(function (event) {
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if (keycode == "13") {
+            sendchat();
+        }
+    });
+
+    function sendchat() {
+        // Lấy giá trị của ô user_message vào biến
+        var user_message = $('#user_message').val();
+        $('#user_message').val('');
+        // Thêm Bạn + nội dung vào ô textarea
+        addToTextArea($('#chat_content'), "[BẠN]: " + user_message);
+
+        // Gửi đến Rasa HTTP endpoint
+        $.ajax({
+            type: 'POST',
+            url: 'http://localhost:5005/webhooks/rest/webhook',
+            contentType: 'application/json',
+            data: JSON.stringify({
+                "sender": "test1",
+                "message": user_message
+            }),
+            success: function (data) {
+                if (data && data.length > 0) {
+                    // Lặp qua tất cả các phản hồi của bot và thêm vào khung chat
+                    data.forEach(function(reply) {
+                        if (reply.text) { // Kiểm tra nếu có trường 'text'
+                            addToTextArea($('#chat_content'), "[BOT11]: " + reply.text);
+                        }
+                    });
+                }
+            },
+        });
+    }
+</script>
+</body>
+</html>
